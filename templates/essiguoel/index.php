@@ -26,7 +26,6 @@
             </main>
             <div id="extra" class="grid">
                 <?php
-                echo forms::regNewUser();
                 echo $build->getExtra();
                 ?>
             </div>
