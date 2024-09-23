@@ -15,7 +15,7 @@ class forms {
             // Testen ob das Formular bereits übermittelt wurde
             if(isset($_POST['check'])){
                 // Falls ein leeres Feld übergeben wurde Warnung ausgeben
-                $warning = !isset($_POST[$fields[$i+1]]) || empty($_POST[$fields[$i+1]]) ? '<span style="color: red">Bitte füllen Sie dieses Feld aus!</span>' : '';
+                $warning = (!isset($_POST[$fields[$i+1]]) || empty($_POST[$fields[$i+1]])) && $fields[$i+3]=='req' ? '<span style="color: red">Bitte füllen Sie dieses Feld aus!</span>' : '';
             } else {
                 $warning = '';
             }
