@@ -15,18 +15,18 @@ class forms {
             // Testen ob das Formular bereits übermittelt wurde
             if(isset($_POST['check'])){
                 // Falls ein leeres Feld übergeben wurde Warnung ausgeben
-                $warn = !isset($_POST[$fields[$i+1]]) || empty($_POST[$fields[$i+1]]) ? '<span style="color: red">Bitte füllen Sie dieses Feld aus!</span>' : '';
+                $warning = !isset($_POST[$fields[$i+1]]) || empty($_POST[$fields[$i+1]]) ? '<span style="color: red">Bitte füllen Sie dieses Feld aus!</span>' : '';
             } else {
-                $warn = '';
+                $warning = '';
             }
             // Ein Sternchen ausgeben, wenn es ein benötigtes Feld ist
-            $req = $fields[$i+3]=='req' ? ' *' : '';
+            $required = $fields[$i+3]=='req' ? ' *' : '';
             // Label in $output speichern
-            $output.='<tr><td><label for="' . $fields[$i] . '">' . $fields[$i] . $req . ':</td>';
+            $output.='<tr><td><label for="' . $fields[$i] . '">' . $fields[$i] . $required . ':</td>';
             // Testen ob ein Inhalt für das Feld übergeben wurde und ggf einsetzen
             $value = isset($_POST[$fields[$i+1]]) ? $_POST[$fields[$i+1]] : '';
             // Eingabefeld in $output speichern
-            $output.='<td><input type="' . $fields[$i+2] . '" id="' . $fields[$i] . '" name="' . $fields[$i+1] . '" value="' . $value . '"></td><td>' . $warn . '</td></tr>' . "\n";
+            $output.='<td><input type="' . $fields[$i+2] . '" id="' . $fields[$i] . '" name="' . $fields[$i+1] . '" value="' . $value . '"></td><td>' . $warning . '</td></tr>' . "\n";
             // Zähler auf Beginn des nächsten Datensatzes setzen
             $i=$i+4;
             // Wenn Zähler über die Größe des Arrays hinausgehen würde oder gleich ist While Loop abbrechen
