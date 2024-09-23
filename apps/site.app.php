@@ -2,6 +2,7 @@
 include $_SERVER['DOCUMENT_ROOT'] . "/methods/database.class.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/methods/builder.class.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/methods/menus.class.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/methods/forms.class.php";
 $build = new builder();
 $menu = new menus();
 ?>
