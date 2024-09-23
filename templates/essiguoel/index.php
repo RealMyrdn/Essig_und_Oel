@@ -1,5 +1,7 @@
 <!-- Original html created by Paul Klein -->
-<?php defined('fromindex') or die; ?>    
+<?php defined('fromindex') or die;
+$fields = array("Vorname", "vorname", "text", "req", "Nachname", "nachname", "text", "req", "Strasse", "strasse", "text", "req", "PLZ", "plz", "text", "req", "Telefon", "telefon", "text", "notreq", "Email", "email", "email", "req", "Passwort", "password", "password", "req", "Passwort wiederholen", "repassword", "password", "req");
+?>
     <body>
         <span id="0"></span>
         <div id="container">
@@ -26,6 +28,7 @@
             </main>
             <div id="extra" class="grid">
                 <?php
+                echo forms::regNewUser($fields);
                 echo $build->getExtra();
                 ?>
             </div>
