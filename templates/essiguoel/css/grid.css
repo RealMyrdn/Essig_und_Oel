@@ -1,0 +1,78 @@
+/****************************************** 
+* grid.css                                *
+* Autor: Paul Klein                       *
+* Erstellt am: 26.02.2019                 *
+* Letzte Änderung:                        *
+******************************************/
+
+@charset "UTF-8";
+
+
+/* Seitenlayout */
+body {
+    text-align: left;
+    font-family: 'Open Sans', Calibri, Helvetica, sans-serif;
+    background-image: url("../images/bgSite.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-color: #272d35;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    margin: 0.9rem;
+}
+
+.grid {
+    padding: 0.9rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #555b6ba2;
+    backdrop-filter: blur(2px);
+}
+
+#header{
+    grid-column: 1/7;
+    grid-row: 1/2;
+    border-radius: 1vw;
+}
+
+#header img{
+    display: block;
+    width: 100%;
+    border: 0.15vw #ffffff77 solid;
+    border-radius: 0.4vw;
+}
+
+#topmenu{
+    grid-column: 1/7;
+    grid-row: 2/3;
+    border-radius: 0.4vw;
+}
+
+#sidebar{
+    grid-row: 3/5;
+    grid-column: 1/2;
+    min-width: 18vw;
+    border-radius: 0.4vw;
+}
+
+#content{
+    grid-column: 2/7;
+    min-height: 40vh;
+    border-radius: 0.4vw;
+}
+
+#extra{
+    grid-column: 2/7;
+    grid-row: 4/5;
+    border-radius: 0.4vw;
+}
+
+#footer{
+    grid-column: 1/7;
+    grid-row: 5/6;
+    border-radius: 0.4vw;
+}

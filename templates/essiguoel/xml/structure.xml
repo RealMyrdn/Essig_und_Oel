@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+    <page>
+        <name>Start</name>
+        <link>start</link>
+        <title>Willkommen bei Essig und Öl</title>
+        <author></author>
+        <keywords></keywords>
+        <description></description>
+        <header>
+            <img>./images/head.jpg</img>
+            <alt>Essig&amp;Öl-Logo</alt>
+            <title>Essig&amp;Öl-Logo</title>
+        </header>
+    </page>
+    <page>
+        <name>Über uns</name>
+        <link>ueberuns</link>
+        <title>Wir über uns</title>
+        <author></author>
+        <keywords></keywords>
+        <description></description>
+        <header>
+            <img>images/head.jpg</img>
+            <alt>Essig&amp;Öl-Logo</alt>
+            <title>Essig&amp;Öl-Logo</title>
+        </header>
+    </page>
+    <page>
+        <name>Essig</name>
+        <link>essig</link>
+        <title>Die Welt des Essigs</title>
+        <author></author>
+        <keywords></keywords>
+        <description></description>
+        <header>
+            <img>images/head.jpg</img>
+            <alt>Essig&amp;Öl-Logo</alt>
+            <title>Essig&amp;Öl-Logo</title>
+        </header>    
+    </page>
+    <page>
+        <name>Öl</name>
+        <link>oel</link>
+        <title>Öle aus aller Welt</title>
+        <author></author>
+        <keywords></keywords>
+        <description></description>
+        <header>
+            <img>images/head.jpg</img>
+            <alt>Essig&amp;Öl-Logo</alt>
+            <title>Essig&amp;Öl-Logo</title>
+        </header>       
+    </page>
+    <page>
+        <name>Geschenkartikel</name>
+        <link>geschenkartikel</link>
+        <title>Geschenkideen für jeden</title>
+        <author></author>
+        <keywords></keywords>
+        <description></description>
+        <header>
+            <img>images/head.jpg</img>
+            <alt>Essig&amp;Öl-Logo</alt>
+            <title>Essig&amp;Öl-Logo</title>
+        </header> 
+    </page>
+    <page>
+        <name>Impressum</name>
+        <link>impressum</link>
+        <title>Impressum</title>
+        <author></author>
+        <keywords></keywords>
+        <description></description>
+        <header>
+            <img>images/head.jpg</img>
+            <alt>Essig&amp;Öl-Logo</alt>
+            <title>Essig&amp;Öl-Logo</title>
+        </header> 
+    </page>
+</pages>
