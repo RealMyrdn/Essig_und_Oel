@@ -75,7 +75,7 @@ class builder {
         return $output;
     }
     public function getFooter() {
-        $output = '<p>&copy; Essig & Öl ' . date('Y') . '</p>';
+        $output = '<p>&copy;Essig & Öl ' . date('Y') . ' (original design by Paul Klein)</p>';
         return $output;
     }
 }
